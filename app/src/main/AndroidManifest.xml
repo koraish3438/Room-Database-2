@@ -12,10 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RoomDatabase2">
         <activity
+            android:name=".ui.ProfileDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.AddProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ProfileListActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.WelcomeActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
