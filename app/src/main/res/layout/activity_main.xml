@@ -11,8 +11,6 @@
 
     <!-- Welcome Text -->
 
-    <!-- Profile Button -->
-
     <TextView
         android:id="@+id/welcomeTextView"
         android:layout_width="0dp"
@@ -27,6 +25,8 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Profile Button -->
 
     <Button
         android:id="@+id/profileButton"
