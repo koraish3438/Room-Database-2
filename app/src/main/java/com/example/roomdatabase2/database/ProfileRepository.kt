@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 
 class ProfileRepository(private val profileDao: ProfileDao) {
     fun getAllProfiles(): LiveData<List<Profile>> {
-        return profileDao.getAllProfile()
+        return profileDao.getAllProfiles()
     }
 
     suspend fun insert(profile: Profile) {

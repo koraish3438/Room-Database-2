@@ -30,13 +30,13 @@ class ProfileViewModel(application: Application): AndroidViewModel(application) 
 
     fun updateProfile(profile: Profile) {
         viewModelScope.launch ( Dispatchers.IO ) {
-            repository.insert(profile)
+            repository.update(profile)
         }
     }
 
     fun deleteProfile(profile: Profile) {
         viewModelScope.launch ( Dispatchers.IO ) {
-            repository.insert(profile)
+            repository.delete(profile)
         }
     }
 }
