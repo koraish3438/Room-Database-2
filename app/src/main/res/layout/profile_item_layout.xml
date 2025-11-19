@@ -14,7 +14,6 @@
         android:layout_height="wrap_content"
         android:padding="16dp">
 
-        <!-- Name -->
         <TextView
             android:id="@+id/tvName"
             android:layout_width="0dp"
@@ -26,10 +25,8 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/layoutIcons"
-            app:layout_constraintHorizontal_bias="0"
             android:layout_marginEnd="8dp"/>
 
-        <!-- Department -->
         <TextView
             android:id="@+id/tvDepartment"
             android:layout_width="0dp"
@@ -43,7 +40,6 @@
             android:layout_marginTop="4dp"
             android:layout_marginEnd="8dp"/>
 
-        <!-- Email -->
         <TextView
             android:id="@+id/tvEmail"
             android:layout_width="0dp"
@@ -57,7 +53,6 @@
             android:layout_marginTop="4dp"
             android:layout_marginEnd="8dp"/>
 
-        <!-- Date of Birth -->
         <TextView
             android:id="@+id/tvDob"
             android:layout_width="0dp"
@@ -71,7 +66,21 @@
             android:layout_marginTop="4dp"
             android:layout_marginEnd="8dp"/>
 
-        <!-- Number -->
+        <!-- District -->
+        <TextView
+            android:id="@+id/tvDistrict"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="District: Dhaka"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/tvDob"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/layoutIcons"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Number fixed constraint -->
         <TextView
             android:id="@+id/tvNumber"
             android:layout_width="0dp"
@@ -79,14 +88,13 @@
             android:text="Number: +880123456789"
             android:textSize="14sp"
             android:textColor="@android:color/black"
-            app:layout_constraintTop_toBottomOf="@id/tvDob"
+            app:layout_constraintTop_toBottomOf="@id/tvDistrict"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/layoutIcons"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="6dp"
             android:layout_marginEnd="8dp"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
-        <!-- Icons Layout (Right Side) -->
         <LinearLayout
             android:id="@+id/layoutIcons"
             android:layout_width="wrap_content"
@@ -101,7 +109,6 @@
                 android:id="@+id/btnEdit"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-
                 android:src="@drawable/outline_edit_24"
                 android:contentDescription="Edit"
                 app:tint="@color/black"
