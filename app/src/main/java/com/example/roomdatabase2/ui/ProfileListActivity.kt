@@ -45,6 +45,8 @@ class ProfileListActivity : AppCompatActivity() {
 
         profileViewModel.getAllProfiles().observe(this) { profile ->
             profileAdapter.updateList(profile)
+
+            binding.tvProfileCounter.text = "Profiles : ${profile.size}"
         }
 
         binding.btnAddProfile.setOnClickListener { 

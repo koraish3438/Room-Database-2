@@ -9,22 +9,38 @@
     tools:context=".ui.ProfileListActivity">
 
     <!-- Title TextView -->
+
+    <!-- RecyclerView for Profile List -->
+
+    <!-- Floating Add Button -->
+
     <TextView
         android:id="@+id/textViewRoom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="32dp"
         android:text="Room"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- RecyclerView for Profile List -->
 
-    <!-- Floating Add Button -->
+    <TextView
+        android:id="@+id/tvProfileCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Profiles: 0"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewProfiles"
