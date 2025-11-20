@@ -7,9 +7,9 @@ import java.io.Serializable
 @Entity(tableName = "user_profile")
 data class Profile(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
-    val name: String,
-    val email: String,
-    val dob: String,
-    val district: String,
-    val number: String,
+    var name: String,
+    var email: String,
+    var dob: String,
+    var district: String,
+    var number: String,
 ): Serializable

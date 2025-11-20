@@ -10,7 +10,7 @@ import androidx.room.Update
 
 @Dao
 interface ProfileDao {
-    @Query("SELECT * FROM profile")
+    @Query("SELECT * FROM user_profile")
     fun getAllProfiles(): LiveData<List<Profile>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
